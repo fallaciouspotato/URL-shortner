@@ -1,0 +1,26 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.0",
+    "@prisma/client": "^5.20.0",
+    "dotenv": "^16.4.5",
+    "nanoid": "^3.3.18"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0",
+    "nodemon": "^3.1.7"
+  }
+}
