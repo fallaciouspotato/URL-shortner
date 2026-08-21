@@ -1,4 +1,4 @@
-const urlService = require('../service/url.service');
+const urlService = require('../services/url.service');
 
 async function shortenUrl(req, res, next){
     try{

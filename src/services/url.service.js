@@ -1,4 +1,3 @@
-prisma = require('../config/db');
 const prisma = require('../config/db');
 const { generateShortCode } = require('../utils/codeGenerator');
 
@@ -9,7 +8,7 @@ const PRISMA_UNQIUE_CONSTRAINT_ERROR = 'P2002';
         for(let attempt = 0; attempt < MAX_RETRIES; attempt++){
             const shortCode = generateShortCode();
             try{
-                const url = await prisma.url.count({
+                const url = await prisma.url.create({
                     data: { shortCode , longUrl },
                 });
                 return url;
